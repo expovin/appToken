@@ -83,7 +83,7 @@ class TokensList extends Component {
                 <Row>                    
                     <Col sm={11}>{this.titolo()}</Col>
                     <Col sm={1}>
-                        <FontAwesomeIcon  className="iconMark" icon={faFilter} onClick={this.filter} color={this.state.filter ? '#333' : '#999'}/>
+                        <FontAwesomeIcon  className="iconMark" icon={faFilter} onClick={this.filter} color={this.state.filter ? '#333333' : '#999999'}/>
                         <FontAwesomeIcon  className="iconMark" icon={faTrash} onClick={this.props.deleteExpired} color="red"/>
                     </Col>
                 </Row>
