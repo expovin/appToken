@@ -97,3 +97,17 @@
 .iconMark {
   margin-left: 15px;
 }
+
+.nav {
+  margin-left: 15px;
+  
+}
+
+
+.APICardText {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #EEE;
+  border-top-color: #FFF;
+  padding:15px;
+}
