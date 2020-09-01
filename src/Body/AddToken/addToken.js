@@ -141,13 +141,20 @@ class AddToken extends Component {
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/weatherinfo<PUT>$" label="PUT" disabled onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/weatherinfo<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
                 </Row> 
-                <Row>
+                 <Row>
                     <Col className="mb-2 text-muted">Switch ON|OFF</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switch/.*<GET>$" label="GET" onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switch/.*<POST>$" label="POST" onChange={this.handleChange} /></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switch/.*<PUT>$" label="PUT" disabled onChange={this.handleChange} /></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switch/.*<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
-                </Row>   
+                </Row>  
+                <Row>
+                    <Col className="mb-2 text-muted">Switch All</Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switchAll<GET>$" label="GET" onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switchAll<POST>$" label="POST" onChange={this.handleChange} /></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switchAll<PUT>$" label="PUT" disabled onChange={this.handleChange} /></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switchAll<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
+                </Row>                  
                 <Row>
                     <Col className="mb-2 text-muted">Set Manual</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/setManual/.*<GET>$" label="GET" onChange={this.handleChange} disabled/></Col>
