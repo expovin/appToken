@@ -130,7 +130,7 @@ class AddToken extends Component {
                 <Row>
                     <Col className="mb-2 text-muted">stateInfo Zone</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo/.*<GET>$" label="GET" onChange={this.handleChange}/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo/.*<POST>$" label="POST" onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo/.*<POST>$" label="POST" onChange={this.handleChange}/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo/.*<PUT>$" label="PUT" disabled onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo/.*<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
                 </Row>    
