@@ -116,7 +116,7 @@ class AddToken extends Component {
                 <Row>
                     <Col className="mb-2 text-muted">Sensori Aperti</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori/aperti<GET>$" label="GET" onChange={this.handleChange} /></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori/aperti<POST>$" label="POST" onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori/aperti<POST>$" label="POST" onChange={this.handleChange} /></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori/aperti<PUT>$" label="PUT" onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori/aperti<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
                 </Row>                                      
