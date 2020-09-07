@@ -94,24 +94,24 @@ class AddToken extends Component {
             <Card.Text className="APICardText">
                 <Row>
                     <Col className="mb-2 text-muted">Allarme</Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/allarme<GET>$" label="GET" onChange={this.handleChange} disabled/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/allarme<POST>$" label="POST" onChange={this.handleChange}/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/allarme<PUT>$" label="PUT" onChange={this.handleChange} disabled/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/allarme<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/<GET>$" label="GET" onChange={this.handleChange} /></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/<POST>$" label="POST" onChange={this.handleChange}/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/<PUT>$" label="PUT" onChange={this.handleChange} /></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/<DELETE>$" label="DELETE" onChange={this.handleChange} /></Col>
                 </Row>  
                 <Row>
                     <Col className="mb-2 text-muted">Basculante</Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/basculante<GET>$" label="GET" onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/basculante<GET>$" label="GET" onChange={this.handleChange} /></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/basculante<POST>$" label="POST" onChange={this.handleChange}/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/basculante<PUT>$" label="PUT" onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/basculante<DELETE>$" label="DELETE" onChange={this.handleChange}/></Col>
                 </Row>           
                 <Row>
                     <Col className="mb-2 text-muted">Sensori</Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori<GET>$" label="GET" onChange={this.handleChange} disabled/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori<POST>$" label="POST" onChange={this.handleChange}/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori<GET>$" label="GET" onChange={this.handleChange} /></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori<POST>$" label="POST" onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori<PUT>$" label="PUT" onChange={this.handleChange} disabled/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori<DELETE>$" label="DELETE" onChange={this.handleChange}/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/allarme\/sensori<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
                 </Row>                          
             </Card.Text>
         )
