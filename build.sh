@@ -23,10 +23,10 @@ echo "Remove folder"
 rm -Rf $program.$ver
 
 echo "Copy to remote server"
-scp $program.$ver.tar pi@192.168.0.2:/home/pi
+scp $program.$ver.tar vince@192.168.0.4:/var/services/homes/vince/Dev
 
 echo "Remove local TarBall"
 rm $program.$ver.tar
 
 echo "Deploy to remote server"
-ssh pi@192.168.0.2 "echo pi | sudo -S /home/pi/deploy.sh $program.$ver.tar"
+#ssh vince@192.168.0.4 "echo  IUg9Q7LnuICA3aCZoX| sudo -S /home/pi/deploy.sh $program.$ver.tar"
