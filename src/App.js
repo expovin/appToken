@@ -56,7 +56,7 @@ class App extends Component {
 
   getTokens = () =>{
     return new Promise ((fulfill, reject) => {
-      axios.get('/token')
+      axios.get('/')
       .then( result => {
         fulfill(result.data)
       })
@@ -66,7 +66,7 @@ class App extends Component {
 
   addToken = (body) =>{
     return new Promise ((fulfill, reject) => {
-      axios.post('/token',body)
+      axios.post('/',body)
       .then( result => {
         this.getTokens()
         this.setState({lastToken:result.data.token, showBottom:"showToken"})
@@ -78,7 +78,7 @@ class App extends Component {
 
   revocaToken = (tokenId) =>{
     return new Promise ((fulfill, reject) => {
-      axios.delete('/token',{data: {tokenId:tokenId}})
+      axios.delete('/',{data: {tokenId:tokenId}})
       .then( result => {
         this.getTokens()
         //this.setState({showBottom:"showToken"})
@@ -90,7 +90,7 @@ class App extends Component {
 
   deleteExpired = () => {
     return new Promise ((fulfill, reject) => {
-      axios.delete('/token/clean')
+      axios.delete('/deleteExpired')
       .then( result => {
         this.getTokens()
         fulfill(result.data)

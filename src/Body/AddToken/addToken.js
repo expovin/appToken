@@ -8,18 +8,18 @@ class AddToken extends Component {
     };
 
     formData = {
-        hours:1,
+        
+        ore:1,
         data : {
             device :"",
             scope : [],
             descrizione:""
         }
-        
     };
 
     handleChange = (event) => {
         switch (event.target.name) {
-            case 'validoOre' : this.formData['hours']=parseInt(event.target.value); break;
+            case 'validoOre' : this.formData['ore']=parseInt(event.target.value); break;
             case 'chkEndPoints' : 
                 if(event.target.checked)
                     this.formData.data.scope.push(event.target.id); 
@@ -138,35 +138,35 @@ class AddToken extends Component {
                     <Col className="mb-2 text-muted">Zone</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/zone<GET>$" label="GET" onChange={this.handleChange}/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/zone<POST>$" label="POST" onChange={this.handleChange} disabled/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/zone<PUT>$" label="PUT" disabled onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/zone<PUT>$" label="PUT"  onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/zone<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
                 </Row>      
                 <Row>
                     <Col className="mb-2 text-muted">stateInfo</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo<GET>$" label="GET" onChange={this.handleChange}/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo<POST>$" label="POST" onChange={this.handleChange} disabled/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo<PUT>$" label="PUT" disabled onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo<PUT>$" label="PUT"  onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
                 </Row>        
                 <Row>
                     <Col className="mb-2 text-muted">stateInfo Zone</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo/.*<GET>$" label="GET" onChange={this.handleChange}/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo/.*<POST>$" label="POST" onChange={this.handleChange}/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo/.*<PUT>$" label="PUT" disabled onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo/.*<PUT>$" label="PUT"  onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/stateInfo/.*<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
                 </Row>    
                 <Row>
                     <Col className="mb-2 text-muted">Weatherinfo</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/weatherinfo<GET>$" label="GET" onChange={this.handleChange}/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/weatherinfo<POST>$" label="POST" onChange={this.handleChange} disabled/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/weatherinfo<PUT>$" label="PUT" disabled onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/weatherinfo<PUT>$" label="PUT" onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/weatherinfo<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
                 </Row> 
                  <Row>
                     <Col className="mb-2 text-muted">Switch ON|OFF</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switch/.*<GET>$" label="GET" onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switch/.*<POST>$" label="POST" onChange={this.handleChange} /></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switch/.*<PUT>$" label="PUT" disabled onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switch/.*<PUT>$" label="PUT"  onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/switch/.*<DELETE>$" label="DELETE" onChange={this.handleChange} /></Col>
                 </Row>  
                 <Row>
@@ -180,14 +180,14 @@ class AddToken extends Component {
                     <Col className="mb-2 text-muted">Set Manual</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/setManual/.*<GET>$" label="GET" onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/setManual/.*<POST>$" label="POST" onChange={this.handleChange} /></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/setManual/.*<PUT>$" label="PUT" disabled onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/setManual/.*<PUT>$" label="PUT"  onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/setManual/.*<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
                 </Row>      
                 <Row>
                     <Col className="mb-2 text-muted">Historic Info</Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/historicInfo/.*<GET>$" label="GET" onChange={this.handleChange} /></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/historicInfo/.*<POST>$" label="POST" onChange={this.handleChange} disabled/></Col>
-                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/historicInfo/.*<PUT>$" label="PUT" disabled onChange={this.handleChange} disabled/></Col>
+                    <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/historicInfo/.*<PUT>$" label="PUT"  onChange={this.handleChange} disabled/></Col>
                     <Col><Form.Check type="switch" name="chkEndPoints" id="^\/tado\/historicInfo/.*<DELETE>$" label="DELETE" onChange={this.handleChange} disabled/></Col>
                 </Row>                                                                                                    
             </Card.Text>
@@ -242,7 +242,7 @@ class AddToken extends Component {
                                 <Col>
                                     <Form.Group controlId="formValidita">
                                         <Form.Label>Valido</Form.Label>
-                                        <Form.Control as="select" name="validoOre" onChange={this.handleChange} custom>
+                                        <Form.Control as="select" name="ore" onChange={this.handleChange} custom>
                                             <option value="1">1 ora</option>
                                             <option value="6">6 ore</option>
                                             <option value="24">24 ore</option>
